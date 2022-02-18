@@ -2,7 +2,7 @@ import './App.css';
 import CovidMap from './Components/CovidMap';
 function App() {
   return (
-    <div>
+    <div className="App">
       <CovidMap />
     </div>
   );
