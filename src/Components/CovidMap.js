@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react';
 import { CovidDataService } from '../service/CovidDataService';
 import { MapUtils } from '../utils/MapUtils';
 import CovidCard from './CovidCard';
-
+import key from './config';
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class CovidMap extends Component {
@@ -24,7 +24,7 @@ class CovidMap extends Component {
       // Important! Always set the container height explicitly
       <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyDM3jT_kT5RONg3vJ-6lfd-Z1W4F5nyswU" }}
+          bootstrapURLKeys={{ key: key.SECRET_API_KEY }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           onGoogleApiLoaded={
